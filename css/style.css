@@ -358,6 +358,13 @@ ul {
 .aside .nav li {
   margin-bottom: 20px;
   display: block;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.aside .nav li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .aside .nav li a {
