@@ -183,7 +183,7 @@ ul {
   font-weight: 500;
   padding: 12px 35px;
   color: white;
-  border-radius: 40px;
+  border-radius: 10px;
   border: none;
   display: inline-block;
   white-space: nowrap;
@@ -1033,6 +1033,7 @@ h3.my-profession {
 .contact .contact-form .btn {
   height: 50px;
   padding: 0 50px;
+  position: relative;
 }
 
 .success-message {

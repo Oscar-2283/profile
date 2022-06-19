@@ -100,4 +100,12 @@ form.addEventListener("submit", e => {
     
   });
 });
-
+// var formInput = (form.querySelectorAll('input'))
+// console.log(formInput[0].value)
+// let button = document.querySelector('button.btn')
+// function sumbitBtn(e){
+//     button.addEventListener('click', ()=>{
+//         button.classList.toggle('clicked');
+    
+//     })
+// }
