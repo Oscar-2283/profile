@@ -1,6 +1,6 @@
     //   typing Animation
     var typed = new Typed('.typing', {
-        strings: ['','Web Designer', 'Web Deloper'],
+        strings: ['','Web Designer', 'Web Developer'],
         typeSpeed:100,
         BackSpeed:60,
         loop:true
@@ -28,6 +28,7 @@ const nav = document.querySelector('.nav'),
             showSection(this)
             if(window.innerWidth < 1200){
                 asideSectionTogglerBtn()
+                document.querySelector('.face').classList.toggle('open')
             }
         })
     }
@@ -69,6 +70,7 @@ const navTogglerBtn = document.querySelector('.nav-toggler'),
       aside = document.querySelector('.aside');
       navTogglerBtn.addEventListener('click', ()=>{
         asideSectionTogglerBtn();
+        document.querySelector('.face').classList.toggle('open')
       })
 
       function asideSectionTogglerBtn(){
@@ -109,3 +111,36 @@ form.addEventListener("submit", e => {
     
 //     })
 // }
+
+//eye
+document.querySelector('body').addEventListener('mousemove',eyeball);
+function eyeball() {
+    'use strict';
+    var eye = document.querySelectorAll(".eye");
+    eye.forEach(function (eye) {
+        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2)
+        let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rot = (radian * (180 / Math.PI) * -1) + 270;
+        eye.style.transform  = "rotate("+ rot +"deg)"
+    })
+}
+
+let clickIt = document.querySelectorAll('.portfolio-item-inner')
+let clickSvg = document.querySelector('.face svg')
+let face = document.querySelector('.face')
+console.log(clickSvg)
+clickIt.forEach(e =>{
+    e.addEventListener('mouseenter',()=>{
+        clickSvg.classList.toggle('shakesvg')
+        face.classList.toggle('active')
+        clickSvg.style.opacity = '1'
+
+    })
+    e.addEventListener('mouseleave',()=>{
+        face.classList.toggle('active')
+        clickSvg.classList.toggle('shakesvg')
+        clickSvg.style.opacity = '0'
+
+    })
+})

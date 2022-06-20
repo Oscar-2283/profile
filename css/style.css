@@ -29,6 +29,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-family: 'Noto Sans TC', sans-serif;
+  overflow: hidden;
 }
 
 * {
@@ -802,6 +803,93 @@ h3.my-profession {
   line-height: 25px;
 }
 
+.portfoilo {
+  position: relative;
+}
+
+.portfoilo .face {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50%;
+  top: 2%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border: 1px solid var(--text-black-900);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 630px) {
+  .portfoilo .face {
+    display: none;
+  }
+}
+
+.portfoilo .face.open {
+  left: calc(50% + 270px);
+}
+
+.portfoilo .face.active {
+  -webkit-animation: face-circle 1s infinite;
+          animation: face-circle 1s infinite;
+}
+
+.portfoilo .face svg {
+  position: absolute;
+  left: 90%;
+  fill: var(--text-black-900);
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.portfoilo .face svg.shakesvg {
+  -webkit-animation: shake 100ms infinite;
+          animation: shake 100ms infinite;
+}
+
+.portfoilo .face .eyes {
+  position: relative;
+  top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfoilo .face .eyes .eye {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: #fff;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.portfoilo .face .eyes .eye::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: var(--skin-color);
+  border-radius: 50%;
+}
+
 .portfoilo .container {
   padding-bottom: 40px;
 }
@@ -861,6 +949,8 @@ h3.my-profession {
   width: 100%;
   height: 250px;
   display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 767px) {
@@ -1057,5 +1147,29 @@ h3.my-profession {
 
 .swal2-title, .swal2-confirm .swal2-styled {
   color: var(--text-black-900) !important;
+}
+
+@-webkit-keyframes face-circle {
+  0% {
+    top: 2%;
+  }
+  50% {
+    top: 5%;
+  }
+  100% {
+    top: 2%;
+  }
+}
+
+@keyframes face-circle {
+  0% {
+    top: 2%;
+  }
+  50% {
+    top: 5%;
+  }
+  100% {
+    top: 2%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
