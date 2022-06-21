@@ -5,7 +5,7 @@
         BackSpeed:60,
         loop:true
         });
-
+        let face = document.querySelector('.face')
 //  Aside
 
 const nav = document.querySelector('.nav'),
@@ -46,6 +46,14 @@ function showSection(element){
         allSection[i].classList.remove('active')
     }
     document.querySelector('#' + target).classList.add('active')
+    console.log(target)
+    if(target =='portfolio'){
+        face.classList.add('op')
+        setTimeout(()=>{
+            face.classList.remove('op');
+        },1200);
+    }
+
 }
 
 function updateNav(element){
@@ -68,6 +76,15 @@ document.querySelector('.hire-me').addEventListener('click',function(){
 
 const navTogglerBtn = document.querySelector('.nav-toggler'),
       aside = document.querySelector('.aside');
+    //   window.addEventListener('resize',()=>{
+    //     if(document.body.clientWidth > 1200){
+    //         aside.classList.remove('open')
+    //         navTogglerBtn.classList.remove('open')
+    //         for (let i=0; i<totalSection;i++){
+    //             allSection[i].classList.remove('open')
+    //         }
+    //     } 
+    //   })
       navTogglerBtn.addEventListener('click', ()=>{
         asideSectionTogglerBtn();
         document.querySelector('.face').classList.toggle('open')
@@ -115,7 +132,6 @@ form.addEventListener("submit", e => {
 //eye
 document.querySelector('body').addEventListener('mousemove',eyeball);
 function eyeball() {
-    'use strict';
     var eye = document.querySelectorAll(".eye");
     eye.forEach(function (eye) {
         let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2)
@@ -128,7 +144,7 @@ function eyeball() {
 
 let clickIt = document.querySelectorAll('.portfolio-item-inner')
 let clickSvg = document.querySelector('.face svg')
-let face = document.querySelector('.face')
+
 console.log(clickSvg)
 clickIt.forEach(e =>{
     e.addEventListener('mouseenter',()=>{

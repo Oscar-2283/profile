@@ -52,23 +52,19 @@ ul {
 
 @-webkit-keyframes slideSection {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    left: 100%;
   }
   100% {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
+    left: 270px;
   }
 }
 
 @keyframes slideSection {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    left: 100%;
   }
   100% {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
+    left: 270px;
   }
 }
 
@@ -803,8 +799,22 @@ h3.my-profession {
   line-height: 25px;
 }
 
-.portfoilo {
-  position: relative;
+@-webkit-keyframes op {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes op {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .portfoilo .face {
@@ -821,13 +831,19 @@ h3.my-profession {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 50%;
+  left: calc( 50% + 135px);
   top: 2%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
   border: 1px solid var(--text-black-900);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (max-width: 1199px) {
+  .portfoilo .face {
+    left: 50%;
+  }
 }
 
 @media (max-width: 630px) {
@@ -836,8 +852,13 @@ h3.my-profession {
   }
 }
 
+.portfoilo .face.op {
+  -webkit-animation: op 1s cubic-bezier(1, -0.71, 0.77, 0.73);
+          animation: op 1s cubic-bezier(1, -0.71, 0.77, 0.73);
+}
+
 .portfoilo .face.open {
-  left: calc(50% + 270px);
+  left: calc(50% + 135px);
 }
 
 .portfoilo .face.active {
