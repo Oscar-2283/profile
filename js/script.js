@@ -1,6 +1,6 @@
     //   typing Animation
     var typed = new Typed('.typing', {
-        strings: ['','Web Designer', 'Web Developer'],
+        strings: ['', 'Web Developer'],
         typeSpeed:100,
         BackSpeed:60,
         loop:true
@@ -9,7 +9,7 @@
 //  Aside
 
 const nav = document.querySelector('.nav'),
-    navList =document.querySelectorAll('li'),
+    navList =nav.querySelectorAll('li'),
     totalNavList = navList.length,
     allSection = document.querySelectorAll('.section'),
     totalSection = allSection.length;
@@ -20,7 +20,6 @@ const nav = document.querySelector('.nav'),
             for(let j =0 ;j<totalNavList;j++){
                 if(navList[j].querySelector('a').classList.contains('active')){
                     addBackSection(j)
-                    // allSection[j].classList.add('back-section')
                 }
                 navList[j].querySelector('a').classList.remove('active')
             }
@@ -46,7 +45,6 @@ function showSection(element){
         allSection[i].classList.remove('active')
     }
     document.querySelector('#' + target).classList.add('active')
-    console.log(target)
     if(target =='portfolio'){
         face.classList.add('op')
         setTimeout(()=>{
@@ -65,26 +63,10 @@ function updateNav(element){
     }
 }
 
-document.querySelector('.hire-me').addEventListener('click',function(){
-    const sectionIndex = this.getAttribute('data-section-index');
-    console.log(sectionIndex);
-    showSection(this)
-    updateNav(this)
-    removeBackSection();
-    addBackSection(sectionIndex)
-})
+
 
 const navTogglerBtn = document.querySelector('.nav-toggler'),
       aside = document.querySelector('.aside');
-    //   window.addEventListener('resize',()=>{
-    //     if(document.body.clientWidth > 1200){
-    //         aside.classList.remove('open')
-    //         navTogglerBtn.classList.remove('open')
-    //         for (let i=0; i<totalSection;i++){
-    //             allSection[i].classList.remove('open')
-    //         }
-    //     } 
-    //   })
       navTogglerBtn.addEventListener('click', ()=>{
         asideSectionTogglerBtn();
         document.querySelector('.face').classList.toggle('open')
@@ -102,32 +84,24 @@ const navTogglerBtn = document.querySelector('.nav-toggler'),
 
 
 
-var form = document.getElementById('sheetdb-form');
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  fetch(form.action, {
-      method : "POST",
-      body: new FormData(document.getElementById("sheetdb-form")),
-  }).then(
+// var form = document.getElementById('sheetdb-form');
+// form.addEventListener("submit", e => {
+//   e.preventDefault();
+//   fetch(form.action, {
+//       method : "POST",
+//       body: new FormData(document.getElementById("sheetdb-form")),
+//   }).then(
     
-    response => response.json()
-  ).then((html) => {
+//     response => response.json()
+//   ).then((html) => {
     
      
-    Swal.fire('Thank you for your message.')
-    form.reset()
+//     Swal.fire('Thank you for your message.')
+//     form.reset()
     
-  });
-});
-// var formInput = (form.querySelectorAll('input'))
-// console.log(formInput[0].value)
-// let button = document.querySelector('button.btn')
-// function sumbitBtn(e){
-//     button.addEventListener('click', ()=>{
-//         button.classList.toggle('clicked');
-    
-//     })
-// }
+//   });
+// });
+
 
 //eye
 document.querySelector('body').addEventListener('mousemove',eyeball);
@@ -145,7 +119,6 @@ function eyeball() {
 let clickIt = document.querySelectorAll('.portfolio-item-inner')
 let clickSvg = document.querySelector('.face svg')
 
-console.log(clickSvg)
 clickIt.forEach(e =>{
     e.addEventListener('mouseenter',()=>{
         clickSvg.classList.toggle('shakesvg')

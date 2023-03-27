@@ -1,455 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My website</title>
-    <link rel="shortcut icon" href="./img//favi.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/color-1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.min.css" integrity="sha512-Kd+SEhBK155eAi26GMJymGkvztAnpEGA/PsJc9OKxRwkhJGblvtVv5Fv1R8zYvPq7dbsy+3o4QJco6hzBdxVjg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-                <!-- style switcher -->
-    <link rel="stylesheet" href="./css/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="./css/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="./css/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="./css/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="./css/color-5.css" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="./css/style-switcher.css">
-
-</head>
-<body>
-
+    <link rel="shortcut icon" href="./img//favi.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/color-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.7.0/csshake.min.css"
+      integrity="sha512-Kd+SEhBK155eAi26GMJymGkvztAnpEGA/PsJc9OKxRwkhJGblvtVv5Fv1R8zYvPq7dbsy+3o4QJco6hzBdxVjg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style switcher -->
+    <link
+      rel="stylesheet"
+      href="./css/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
+    <link rel="stylesheet" href="./css/style-switcher.css" />
+  </head>
+  <body>
     <div class="main-container">
-        <!-- Aside -->
-        <div class="aside">
-            <div class="logo">
-                <a href="#"><span>My</span> website</a>
-            </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-                <!-- <li><a href="#services"><i class="fa fa-list"></i> Services</a></li> -->
-                <li class="pro"><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"></i>contact</a></li>
-            </ul>
+      <!-- Aside -->
+      <div class="aside">
+        <div class="logo">
+          <a href="#"><span>My</span> website</a>
         </div>
-        <!-- main-content -->
-        <div class="main-content">
-            <!-- home section -->
-            <section class="home active section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">你好，我叫做 <span class="chinese">王得桓 </span><span class="name"> Oscar Wang</span></h3>
-                            <h3 class="my-profession">我是一個 <span class="typing"></span></h3>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="./img/me.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About section -->
-            <section class="about section " id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3 >I'm a <span>Web Developer</span></h3>
-                                    <p>一個偶然的機會下，我開始了前端網頁技術的學習，享受著開發過程中的種種挑戰與豐沛成就感，期望著未來能夠成為一個真正的軟體工程師，所以就毅然決然地以全職的方式，破釜沉舟從零開始學習，喜歡解決問題，我相信我可以成為一個優秀的軟體工程師。</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Github : <span>https://github.com/Oscar-2283</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>oscar50048@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone : <span>+866 911 766 239</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Taichung</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML&CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 85%"></div>
-                                                <div class="skill-percent">85%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 65%;"></div>
-                                                <div class="skill-percent">65%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Bootstrap</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 80%;"></div>
-                                                <div class="skill-percent">80%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Vue</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 20%;"></div>
-                                                <div class="skill-percent">20%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>Figma</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 40%;"></div>
-                                                <div class="skill-percent">40%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2012-2016
-                                                    </h3>
-                                                    <h4 class="timeline-title">勤益科技大學</h4>
-                                                    <p class="timeline-text">
-                                                        電機工程系
-                                                    </p>
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2009-2012
-                                                    </h3>
-                                                    <h4 class="timeline-title">光華高工</h4>
-                                                    <p class="timeline-text">
-                                                        電機系
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020-2021
-                                                    </h3>
-                                                    <h4 class="timeline-title">英業達股份有限公司</h4>
-                                                    <p class="timeline-text">
-                                                        光學工程師
-                                                    </p>
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2019-2020
-                                                    </h3>
-                                                    <h4 class="timeline-title">誠研科技股份有限公司</h4>
-                                                    <p class="timeline-text">
-                                                        產品維修員
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Services section -->
-            <!-- <section class="service section " id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Services</h2>
-                        </div>
-                    </div>
-                    <div class="row"> -->
-                        <!-- Service item -->
-                        <!-- <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut!</p>
-                            </div>
-                        </div> -->
-                        <!-- Service item -->
-                        <!-- <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-laptop-code"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut!</p>
-                            </div>
-                        </div> -->
-                        <!-- Service item -->
-                        <!-- <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-palette"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut!</p>
-                            </div>
-                        </div> -->
-                        <!-- Service item -->
-                        <!-- <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-code"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut!</p>
-                            </div>
-                        </div> -->
-                        <!-- Service item -->
-                        <!-- <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut!</p>
-                            </div>
-                        </div> -->
-                        <!-- Service item -->
-                        <!-- <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-bullhorn"></i>
-                                </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aut!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- Porfoilo section -->
-            <section class="portfoilo section " id="portfolio">
-                <div class="container">
-                    <div class="face">
-                        <div class="eyes">
-                            <div class="eye"></div>
-                            <div class="eye"></div>
-                            <svg width="110" height="24" viewBox="0 0 110 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.1989 8H16.5568C16.4006 7.24006 16.1272 6.57244 15.7365 5.99716C15.353 5.42188 14.8843 4.93892 14.3303 4.5483C13.7834 4.15057 13.1762 3.85227 12.5085 3.65341C11.8409 3.45455 11.1449 3.35511 10.4205 3.35511C9.09945 3.35511 7.90272 3.68892 6.83028 4.35653C5.76494 5.02415 4.91622 6.00781 4.28411 7.30753C3.65911 8.60724 3.34661 10.2017 3.34661 12.0909C3.34661 13.9801 3.65911 15.5746 4.28411 16.8743C4.91622 18.174 5.76494 19.1577 6.83028 19.8253C7.90272 20.4929 9.09945 20.8267 10.4205 20.8267C11.1449 20.8267 11.8409 20.7273 12.5085 20.5284C13.1762 20.3295 13.7834 20.0348 14.3303 19.6442C14.8843 19.2464 15.353 18.7599 15.7365 18.1847C16.1272 17.6023 16.4006 16.9347 16.5568 16.1818H19.1989C19 17.2969 18.6378 18.2947 18.1122 19.1754C17.5867 20.0561 16.9333 20.8054 16.152 21.4233C15.3708 22.0341 14.4936 22.4993 13.5206 22.8189C12.5547 23.1385 11.5213 23.2983 10.4205 23.2983C8.55968 23.2983 6.90485 22.8438 5.45599 21.9347C4.00712 21.0256 2.86721 19.733 2.03624 18.0568C1.20528 16.3807 0.789795 14.392 0.789795 12.0909C0.789795 9.78977 1.20528 7.80114 2.03624 6.125C2.86721 4.44886 4.00712 3.15625 5.45599 2.24716C6.90485 1.33807 8.55968 0.883522 10.4205 0.883522C11.5213 0.883522 12.5547 1.04332 13.5206 1.36293C14.4936 1.68253 15.3708 2.15128 16.152 2.76918C16.9333 3.37997 17.5867 4.12571 18.1122 5.00639C18.6378 5.87997 19 6.87784 19.1989 8Z" fill="var(--text-black-900)"/>
-                                <path d="M25.6415 1.18182V23H23.1273V1.18182H25.6415Z" fill="var(--text-black-900)"/>
-                                <path d="M30.2465 23V6.63636H32.7607V23H30.2465ZM31.5249 3.90909C31.0348 3.90909 30.6122 3.74219 30.2571 3.40838C29.9091 3.07457 29.7351 2.6733 29.7351 2.20455C29.7351 1.7358 29.9091 1.33452 30.2571 1.00071C30.6122 0.666903 31.0348 0.5 31.5249 0.5C32.0149 0.5 32.434 0.666903 32.782 1.00071C33.1371 1.33452 33.3147 1.7358 33.3147 2.20455C33.3147 2.6733 33.1371 3.07457 32.782 3.40838C32.434 3.74219 32.0149 3.90909 31.5249 3.90909Z" fill="var(--text-black-900)"/>
-                                <path d="M44.0133 23.3409C42.4792 23.3409 41.1582 22.9787 40.0503 22.2543C38.9423 21.5298 38.09 20.532 37.4935 19.2607C36.8969 17.9893 36.5986 16.5369 36.5986 14.9034C36.5986 13.2415 36.904 11.7749 37.5148 10.5036C38.1327 9.22514 38.992 8.22727 40.0929 7.50994C41.2008 6.78551 42.4935 6.4233 43.9707 6.4233C45.1213 6.4233 46.1582 6.63636 47.0815 7.0625C48.0048 7.48864 48.7612 8.08523 49.3507 8.85227C49.9402 9.61932 50.306 10.5142 50.448 11.5369H47.9338C47.742 10.7912 47.3159 10.1307 46.6554 9.5554C46.002 8.97301 45.1213 8.68182 44.0133 8.68182C43.0332 8.68182 42.1739 8.9375 41.4352 9.44886C40.7037 9.95312 40.1319 10.6669 39.72 11.5902C39.3152 12.5064 39.1128 13.5824 39.1128 14.8182C39.1128 16.0824 39.3116 17.1832 39.7094 18.1207C40.1142 19.0582 40.6824 19.7862 41.4139 20.3047C42.1525 20.8232 43.019 21.0824 44.0133 21.0824C44.6667 21.0824 45.2598 20.9688 45.7925 20.7415C46.3251 20.5142 46.7761 20.1875 47.1454 19.7614C47.5148 19.3352 47.7775 18.8239 47.9338 18.2273H50.448C50.306 19.1932 49.9544 20.0632 49.3933 20.8374C48.8393 21.6044 48.1043 22.2152 47.1881 22.6697C46.279 23.1172 45.2207 23.3409 44.0133 23.3409Z" fill="var(--text-black-900)"/>
-                                <path d="M56.4672 17.0341L56.4246 13.9233H56.9359L64.095 6.63636H67.2058L59.578 14.3494H59.3649L56.4672 17.0341ZM54.1234 23V1.18182H56.6376V23H54.1234ZM64.5212 23L58.1291 14.9034L59.9189 13.1562L67.7172 23H64.5212Z" fill="var(--text-black-900)"/>
-                                <path d="M81.8622 1.18182V23H79.2202V1.18182H81.8622Z" fill="var(--text-black-900)"/>
-                                <path d="M93.9352 6.63636V8.76705H85.4551V6.63636H93.9352ZM87.9267 2.71591H90.4409V18.3125C90.4409 19.0227 90.5439 19.5554 90.7498 19.9105C90.9629 20.2585 91.2328 20.4929 91.5595 20.6136C91.8933 20.7273 92.2449 20.7841 92.6142 20.7841C92.8912 20.7841 93.1185 20.7699 93.296 20.7415C93.4736 20.706 93.6156 20.6776 93.7221 20.6562L94.2335 22.9148C94.0631 22.9787 93.8251 23.0426 93.5197 23.1065C93.2143 23.1776 92.8273 23.2131 92.3585 23.2131C91.6483 23.2131 90.9523 23.0604 90.2704 22.755C89.5957 22.4496 89.0346 21.9844 88.5872 21.3594C88.1469 20.7344 87.9267 19.946 87.9267 18.9943V2.71591Z" fill="var(--text-black-900)"/>
-                                <path d="M109.479 1.18182L109.265 16.8636H106.794L106.581 1.18182H109.479ZM108.03 23.1705C107.504 23.1705 107.053 22.9822 106.677 22.6058C106.3 22.2294 106.112 21.7784 106.112 21.2528C106.112 20.7273 106.3 20.2763 106.677 19.8999C107.053 19.5234 107.504 19.3352 108.03 19.3352C108.555 19.3352 109.006 19.5234 109.383 19.8999C109.759 20.2763 109.947 20.7273 109.947 21.2528C109.947 21.6009 109.859 21.9205 109.681 22.2116C109.51 22.5028 109.28 22.7372 108.988 22.9148C108.704 23.0852 108.385 23.1705 108.03 23.1705Z" fill="var(--text-black-900)"/>
-                                </svg>
-                                
-                        </div>
-                        
-                    </div>
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Protfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>My Last Projects :</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- protfolio-item -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <a href="https://oscar-2283.github.io/cookie-monster/" target="_blank" >
-                                    <div class="portfolio-img">
-                                        <img src="./img/project-img/1.png" alt="">
-                                    </div>
-                                    <div class="portfolio-item-text">一人一伴形象網站</div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- protfolio-item -->
-                        <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <a href="https://oscar-2283.github.io/twelve/" target="_blank" >
-                                <div class="portfolio-img">
-                                    <img src="./img/project-img/4.png" alt="">
-                                </div>
-                                <div class="portfolio-item-text">十二段鍋物形象網站</div>
-                            </a>
-                        </div>
-                    </div>
-                        <!-- protfolio-item -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <a href=" https://oscar-2283.github.io/weather/" target="_blank" >
-                                    <div class="portfolio-img">
-                                        <img src="./img/project-img/2.png" alt="">
-                                    </div>
-                                    <div class="portfolio-item-text">24小時天氣卡</div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- protfolio-item -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <a href=" https://oscar-2283.github.io/color-game/" target="_blank" >
-                                    <div class="portfolio-img">
-                                        <img src="./img/project-img/3.png" alt="">
-                                    </div>
-                                    <div class="portfolio-item-text">色弱遊戲</div>
-                                </a>
-                            </div>
-                        </div>
+        <div class="nav-toggler">
+          <span></span>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fa fa-user"></i> About</a>
+          </li>
 
-                    </div>
+          <li class="pro">
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+          </li>
+          <!-- <li>
+            <a href="#contact"><i class="fa fa-comments"></i>contact</a>
+          </li> -->
+        </ul>
+      </div>
+      <!-- main-content -->
+      <div class="main-content">
+        <!-- home section -->
+        <section class="home active section" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <h3 class="hello">
+                  你好，我叫做 <span class="chinese">王得桓 </span
+                  ><span class="name"> Oscar Wang</span>
+                </h3>
+                <h3 class="my-profession">
+                  我是一個 <span class="typing"></span>
+                </h3>
+              </div>
+              <div class="home-img padd-15">
+                <img src="./img/me.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About section -->
+        <section class="about section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>About Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <h3>I'm a <span>Web Developer</span></h3>
+                    <p>
+                      一我熱愛挑戰和創造，相信只有不斷地改變和學習，才能保持熱情和動力。我喜歡從不同的角度看待問題，並且不斷尋求新的解決方案。
+                    </p>
+                  </div>
                 </div>
-            </section>  
-            <!-- Contact section -->
-            <section class="contact section" id="contact">
-                <div class="container">
+                <div class="row">
+                  <div class="personal-info padd-15">
                     <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
-                        </div>
+                      <div class="info-item padd-15">
+                        <p>
+                          Github : <span>https://github.com/Oscar-2283</span>
+                        </p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Email : <span>oscar50048@gmail.com</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Phone : <span>+866 911 766 239</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>City : <span>Taichung</span></p>
+                      </div>
                     </div>
-                    <h3 class="contact-title padd-15">Have You any Questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                    <div class="row">
-                        <!-- contact info -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Me on</h4>
-                            <p>+886 911 766 239</p>
-                        </div>
-                        <!-- contact info -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>adress</h4>
-                            <p>Taichung</p>
-                        </div>
-                        <!-- contact info -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>oscar500@gmail.com</p>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Send ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
-                    <!-- Contact form -->
-                    <form action="https://sheetdb.io/api/v1/6tgn7rbu5vw0l" method="post" id="sheetdb-form">
-                        
-                        <div class="row">
-                            <div class="contact-form padd-15">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control"  maxlength="10"  name="data[name]" onkeyup="value = value.replace(/[\d]/g,'')" required >
-                                            <span>Name</span>
-                                        </div>
-                                    </div>
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control"  maxlength="45"name="data[email]" required>
-                                            <span>Email</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control"  maxlength="45"  name="data[subject]" required>
-                                            
-                                            <span>subject</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="" cols="30" rows="10" name="data[message]  "  required></textarea>
-                                            <span>message</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <button type="submit" class="btn">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                  </div>
                 </div>
-            </section>
-        </div>
+                <div class="row">
+                  <div class="skills padd-15">
+                    <h3>Skill</h3>
+                    <div class="row">
+                      <div class="skill-item padd-15">
+                        <h5>Vue.js</h5>
+                        <ul>
+                          <li>Vue3</li>
+                          <li>使用 Pinia 做狀態管理</li>
+                          <li>使用 Vue-router 建構路由</li>
+                          <li>使用 Vite 建構及管理專案</li>
+                        </ul>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Javascript</h5>
+                        <ul>
+                          <li>Javascript 及 ES6 標準</li>
+                          <li>ESLint 控管程式碼品質</li>
+                          <li>RESTful API 介接</li>
+                        </ul>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Web layout</h5>
+                        <ul>
+                          <li>HTML5、CSS3 網頁開發</li>
+                          <li>RWD</li>
+                          <li>SCSS</li>
+                          <li>Bootstrap</li>
+                          <li>@master/css</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2012-2016
+                            </h3>
+                            <h4 class="timeline-title">勤益科技大學</h4>
+                            <p class="timeline-text">電機工程系</p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2009-2012
+                            </h3>
+                            <h4 class="timeline-title">光華高工</h4>
+                            <p class="timeline-text">電機系</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2022-2023-2
+                            </h3>
+                            <h4 class="timeline-title">創造力互動媒體</h4>
+                            <p class="timeline-text">光前端設計師</p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2020-2021
+                            </h3>
+                            <h4 class="timeline-title">英業達股份有限公司</h4>
+                            <p class="timeline-text">光學工程師</p>
+                          </div>
+                          <!-- timeline item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2019-2020
+                            </h3>
+                            <h4 class="timeline-title">誠研科技股份有限公司</h4>
+                            <p class="timeline-text">產品維修員</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfoilo section" id="portfolio">
+          <div class="container">
+            <div class="face">
+              <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <svg
+                  width="110"
+                  height="24"
+                  viewBox="0 0 110 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.1989 8H16.5568C16.4006 7.24006 16.1272 6.57244 15.7365 5.99716C15.353 5.42188 14.8843 4.93892 14.3303 4.5483C13.7834 4.15057 13.1762 3.85227 12.5085 3.65341C11.8409 3.45455 11.1449 3.35511 10.4205 3.35511C9.09945 3.35511 7.90272 3.68892 6.83028 4.35653C5.76494 5.02415 4.91622 6.00781 4.28411 7.30753C3.65911 8.60724 3.34661 10.2017 3.34661 12.0909C3.34661 13.9801 3.65911 15.5746 4.28411 16.8743C4.91622 18.174 5.76494 19.1577 6.83028 19.8253C7.90272 20.4929 9.09945 20.8267 10.4205 20.8267C11.1449 20.8267 11.8409 20.7273 12.5085 20.5284C13.1762 20.3295 13.7834 20.0348 14.3303 19.6442C14.8843 19.2464 15.353 18.7599 15.7365 18.1847C16.1272 17.6023 16.4006 16.9347 16.5568 16.1818H19.1989C19 17.2969 18.6378 18.2947 18.1122 19.1754C17.5867 20.0561 16.9333 20.8054 16.152 21.4233C15.3708 22.0341 14.4936 22.4993 13.5206 22.8189C12.5547 23.1385 11.5213 23.2983 10.4205 23.2983C8.55968 23.2983 6.90485 22.8438 5.45599 21.9347C4.00712 21.0256 2.86721 19.733 2.03624 18.0568C1.20528 16.3807 0.789795 14.392 0.789795 12.0909C0.789795 9.78977 1.20528 7.80114 2.03624 6.125C2.86721 4.44886 4.00712 3.15625 5.45599 2.24716C6.90485 1.33807 8.55968 0.883522 10.4205 0.883522C11.5213 0.883522 12.5547 1.04332 13.5206 1.36293C14.4936 1.68253 15.3708 2.15128 16.152 2.76918C16.9333 3.37997 17.5867 4.12571 18.1122 5.00639C18.6378 5.87997 19 6.87784 19.1989 8Z"
+                    fill="var(--text-black-900)"
+                  />
+                  <path
+                    d="M25.6415 1.18182V23H23.1273V1.18182H25.6415Z"
+                    fill="var(--text-black-900)"
+                  />
+                  <path
+                    d="M30.2465 23V6.63636H32.7607V23H30.2465ZM31.5249 3.90909C31.0348 3.90909 30.6122 3.74219 30.2571 3.40838C29.9091 3.07457 29.7351 2.6733 29.7351 2.20455C29.7351 1.7358 29.9091 1.33452 30.2571 1.00071C30.6122 0.666903 31.0348 0.5 31.5249 0.5C32.0149 0.5 32.434 0.666903 32.782 1.00071C33.1371 1.33452 33.3147 1.7358 33.3147 2.20455C33.3147 2.6733 33.1371 3.07457 32.782 3.40838C32.434 3.74219 32.0149 3.90909 31.5249 3.90909Z"
+                    fill="var(--text-black-900)"
+                  />
+                  <path
+                    d="M44.0133 23.3409C42.4792 23.3409 41.1582 22.9787 40.0503 22.2543C38.9423 21.5298 38.09 20.532 37.4935 19.2607C36.8969 17.9893 36.5986 16.5369 36.5986 14.9034C36.5986 13.2415 36.904 11.7749 37.5148 10.5036C38.1327 9.22514 38.992 8.22727 40.0929 7.50994C41.2008 6.78551 42.4935 6.4233 43.9707 6.4233C45.1213 6.4233 46.1582 6.63636 47.0815 7.0625C48.0048 7.48864 48.7612 8.08523 49.3507 8.85227C49.9402 9.61932 50.306 10.5142 50.448 11.5369H47.9338C47.742 10.7912 47.3159 10.1307 46.6554 9.5554C46.002 8.97301 45.1213 8.68182 44.0133 8.68182C43.0332 8.68182 42.1739 8.9375 41.4352 9.44886C40.7037 9.95312 40.1319 10.6669 39.72 11.5902C39.3152 12.5064 39.1128 13.5824 39.1128 14.8182C39.1128 16.0824 39.3116 17.1832 39.7094 18.1207C40.1142 19.0582 40.6824 19.7862 41.4139 20.3047C42.1525 20.8232 43.019 21.0824 44.0133 21.0824C44.6667 21.0824 45.2598 20.9688 45.7925 20.7415C46.3251 20.5142 46.7761 20.1875 47.1454 19.7614C47.5148 19.3352 47.7775 18.8239 47.9338 18.2273H50.448C50.306 19.1932 49.9544 20.0632 49.3933 20.8374C48.8393 21.6044 48.1043 22.2152 47.1881 22.6697C46.279 23.1172 45.2207 23.3409 44.0133 23.3409Z"
+                    fill="var(--text-black-900)"
+                  />
+                  <path
+                    d="M56.4672 17.0341L56.4246 13.9233H56.9359L64.095 6.63636H67.2058L59.578 14.3494H59.3649L56.4672 17.0341ZM54.1234 23V1.18182H56.6376V23H54.1234ZM64.5212 23L58.1291 14.9034L59.9189 13.1562L67.7172 23H64.5212Z"
+                    fill="var(--text-black-900)"
+                  />
+                  <path
+                    d="M81.8622 1.18182V23H79.2202V1.18182H81.8622Z"
+                    fill="var(--text-black-900)"
+                  />
+                  <path
+                    d="M93.9352 6.63636V8.76705H85.4551V6.63636H93.9352ZM87.9267 2.71591H90.4409V18.3125C90.4409 19.0227 90.5439 19.5554 90.7498 19.9105C90.9629 20.2585 91.2328 20.4929 91.5595 20.6136C91.8933 20.7273 92.2449 20.7841 92.6142 20.7841C92.8912 20.7841 93.1185 20.7699 93.296 20.7415C93.4736 20.706 93.6156 20.6776 93.7221 20.6562L94.2335 22.9148C94.0631 22.9787 93.8251 23.0426 93.5197 23.1065C93.2143 23.1776 92.8273 23.2131 92.3585 23.2131C91.6483 23.2131 90.9523 23.0604 90.2704 22.755C89.5957 22.4496 89.0346 21.9844 88.5872 21.3594C88.1469 20.7344 87.9267 19.946 87.9267 18.9943V2.71591Z"
+                    fill="var(--text-black-900)"
+                  />
+                  <path
+                    d="M109.479 1.18182L109.265 16.8636H106.794L106.581 1.18182H109.479ZM108.03 23.1705C107.504 23.1705 107.053 22.9822 106.677 22.6058C106.3 22.2294 106.112 21.7784 106.112 21.2528C106.112 20.7273 106.3 20.2763 106.677 19.8999C107.053 19.5234 107.504 19.3352 108.03 19.3352C108.555 19.3352 109.006 19.5234 109.383 19.8999C109.759 20.2763 109.947 20.7273 109.947 21.2528C109.947 21.6009 109.859 21.9205 109.681 22.2116C109.51 22.5028 109.28 22.7372 108.988 22.9148C108.704 23.0852 108.385 23.1705 108.03 23.1705Z"
+                    fill="var(--text-black-900)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Protfolio</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>My Last Projects :</h2>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-item-inner shadow-dark">
+                <div>
+                  <div class="portfolio-img">
+                    <img
+                      src="https://www.cakeresume.com/cdn-cgi/image/fit=scale-down,format=auto,w=828/https://images.cakeresume.com/R0VXG/27-3e9a7e/8b2177f9-8ff2-4ee1-8f23-2819c6cd9a08.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="p-15 portfolio-list">
+                    <div class="portfolio-item-text">耳機電商網站</div>
+                    <div class="row">
+                      <a
+                        href="https://github.com/Oscar-2283/headphone"
+                        target="_blank"
+                        >Github-Repo</a
+                      >
+                      <span>|</span>
+                      <a
+                        href="https://oscar-2283.github.io/headphone/#/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                    </div>
+                    <h4>相關技術:</h4>
+                    <ul>
+                      <li>Vite</li>
+                      <li>Vue 3 (Options API), Vite, Pinia</li>
+                      <li>使用 Vue Router 路由</li>
+                      <li>使用 Pinia 跨元件傳遞</li>
+                      <li>Axios 串接 RESTful API Axios 串接</li>
+                      <li>Bootstrap + scss</li>
+                      <li>VeeValidate, Swiper, sweetalert2, Gsap</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item-inner shadow-dark">
+                <div>
+                  <div class="portfolio-img">
+                    <img
+                      src="https://www.cakeresume.com/cdn-cgi/image/fit=scale-down,format=auto,w=828/https://images.cakeresume.com/R0VXG/27-3e9a7e/4f9da77e-6ddc-4029-b8d6-e2368b4a03bb.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="p-15 portfolio-list">
+                    <div class="portfolio-item-text">車美仕股份有限公司</div>
+                    <div class="row">
+                      <a href="https://www.carmax.com.tw/en" target="_blank"
+                        >官方網站</a
+                      >
+                    </div>
+                    <h4>相關技術&資訊:</h4>
+                    <ul>
+                      <li>已上線網站</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item-inner shadow-dark">
+                <div>
+                  <div class="portfolio-img">
+                    <img
+                      src="https://www.cakeresume.com/cdn-cgi/image/fit=scale-down,format=auto,w=828/https://images.cakeresume.com/R0VXG/27-3e9a7e/6c651e9e-6c9e-4ea9-b251-fb14e77f48a7.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="p-15 portfolio-list">
+                    <div class="portfolio-item-text">
+                      國光生物科技股份有限公司
+                    </div>
+                    <div class="row">
+                      <a href="http://www.adimmune.com.tw/" target="_blank"
+                        >官方網站</a
+                      >
+                    </div>
+                    <h4>相關技術&資訊:</h4>
+                    <ul>
+                      <li>已上線網站</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item-inner shadow-dark">
+                <div>
+                  <div class="portfolio-img">
+                    <img
+                      src="https://www.cakeresume.com/cdn-cgi/image/fit=scale-down,format=auto,w=828/https://images.cakeresume.com/R0VXG/27-3e9a7e/cd85aaec-eb90-4a9b-beea-7588144786d1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="p-15 portfolio-list">
+                    <div class="portfolio-item-text">將捷集團ESG</div>
+                    <div class="row">
+                      <a
+                        href="https://esg.fabulousgroup.com.tw/"
+                        target="_blank"
+                        >官方網站</a
+                      >
+                    </div>
+                    <h4>相關技術&資訊:</h4>
+                    <ul>
+                      <li>已上線網站</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item-inner shadow-dark">
+                <div>
+                  <div class="portfolio-img">
+                    <img src="./img/project-img/1.png" alt="" />
+                  </div>
+                  <div class="p-15 portfolio-list">
+                    <div class="portfolio-item-text">一人一伴形象網站</div>
+                    <div class="row">
+                      <a
+                        href="https://github.com/Oscar-2283/cookie-monster"
+                        target="_blank"
+                        >Github-Repo</a
+                      >
+                      <span>|</span>
+                      <a
+                        href="https://oscar-2283.github.io/cookie-monster/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                    </div>
+                    <h4>相關技術&資訊:</h4>
+                    <ul>
+                      <li>bootstrap Modal</li>
+                      <li>glightbox</li>
+                      <li>swiper</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item-inner shadow-dark">
+                <div>
+                  <div class="portfolio-img">
+                    <img src="./img/project-img/2.png" alt="" />
+                  </div>
+                  <div class="p-15 portfolio-list">
+                    <div class="portfolio-item-text">24小時天氣卡</div>
+                    <div class="row">
+                      <a
+                        href="https://github.com/Oscar-2283/weather"
+                        target="_blank"
+                        >Github-Repo</a
+                      >
+                      <span>|</span>
+                      <a
+                        href="https://oscar-2283.github.io/weather/"
+                        target="_blank"
+                        >Demo</a
+                      >
+                    </div>
+                    <h4>相關技術:</h4>
+                    <ul>
+                      <li>API 串接</li>
+                      <li>HTML & CSS</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact section -->
+        <!-- <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+            <h3 class="contact-title padd-15">Have You any Questions ?</h3>
+            <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+            <div class="row"> -->
+        <!-- contact info -->
+        <!-- <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Call Me on</h4>
+                <p>+886 911 766 239</p>
+              </div> -->
+        <!-- contact info -->
+        <!-- <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <h4>adress</h4>
+                <p>Taichung</p>
+              </div> -->
+        <!-- contact info -->
+        <!-- <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>oscar500@gmail.com</p>
+              </div>
+            </div>
+            <h3 class="contact-title padd-15">Send ME AN EMAIL</h3>
+            <h4 class="contact-sub-title padd-15">
+              I'M VERY RESPOSIVE TO MESSAGES
+            </h4> -->
+        <!-- Contact form -->
+        <!-- <form
+              action="https://sheetdb.io/api/v1/6tgn7rbu5vw0l"
+              method="post"
+              id="sheetdb-form"
+            >
+              <div class="row">
+                <div class="contact-form padd-15">
+                  <div class="row">
+                    <div class="form-item col-6 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          maxlength="10"
+                          name="data[name]"
+                          onkeyup="value = value.replace(/[\d]/g,'')"
+                          required
+                        />
+                        <span>Name</span>
+                      </div>
+                    </div>
+                    <div class="form-item col-6 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          maxlength="45"
+                          name="data[email]"
+                          required
+                        />
+                        <span>Email</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          maxlength="45"
+                          name="data[subject]"
+                          required
+                        />
+
+                        <span>subject</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          id=""
+                          cols="30"
+                          rows="10"
+                          name="data[message]  "
+                          required
+                        ></textarea>
+                        <span>message</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-item col-12 padd-15">
+                      <button type="submit" class="btn">Message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form> -->
+        <!-- </div>
+        </section> -->
+      </div>
     </div>
 
     <!-- Style switcher -->
     <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas "></i>
-        </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-        </div>
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
     </div>
     <!-- Style switcher end -->
 
@@ -458,5 +611,5 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/style-switcher.js"></script>
-</body>
+  </body>
 </html>
